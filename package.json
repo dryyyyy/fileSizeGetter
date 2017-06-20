@@ -1,0 +1,26 @@
+{
+  "name": "file-size-getter",
+  "version": "1.0.0",
+  "description": "the 5th api project on FCC",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dryyyyy/fileSizeGetter.git"
+  },
+  "author": "dryyyyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dryyyyy/fileSizeGetter/issues"
+  },
+  "homepage": "https://github.com/dryyyyy/fileSizeGetter#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "multer": "^1.3.0",
+    "path": "^0.12.7"
+  }
+}
