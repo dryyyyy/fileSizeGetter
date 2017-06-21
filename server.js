@@ -10,12 +10,12 @@ let app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-app.use('/', function (req, res){
+app.get('/', function (req, res){
    res.render('index', {status: 'No file chosen'});
 });
 
-app.get('/test', function(req, res) {
-    res.send('test');
+app.use('/upload', upload.single('file'), function(req, res, next){
+    res.send(req.file);
 })
 
 
