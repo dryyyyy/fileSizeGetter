@@ -15,7 +15,8 @@ app.get('/', function (req, res){
 });
 
 app.use('/upload', upload.single('file'), function(req, res, next){
-    res.send(req.file);
+    let fileSize = { size: req.file.size }
+    res.send(fileSize);
 })
 
 
